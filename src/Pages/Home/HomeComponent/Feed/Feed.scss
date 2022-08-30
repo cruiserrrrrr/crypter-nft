@@ -1,0 +1,132 @@
+:root {
+    --main-background: #141416;
+    --main-e-color: #353945;
+    /* ----------------------------- */
+    --main-color-text-n-border: #777E91;
+    --main-color-text: #F4F5F6;
+    --main-color-price: #45B36B;
+    --main-btn-color: #FCFCFD;
+    --main-btn-color-dark: #23262F;
+    /* ----------------------------- */
+    --main-btn-blue: #3772FF;
+    --main-btn-blue-hover: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #3772FF;
+    --main-btn-dark: #E6E8EC;
+    --main-btn-dark-hover: #23262F;
+    --main-btn-white: #777E91;
+    --main-btn-white-hover: #FCFCFD;
+    /* ----------------------------- */
+}
+
+.feed-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 0 128px 0;
+    gap: 32px;
+
+    .future-items {
+        display: flex;
+        gap: 32px;
+
+        .main__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 17px;
+
+            .main__item_img {
+                background-image: url(https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/doublefox.png?raw=true);
+                background-position: center;
+                background-size: 100% 100%;
+                width: 442px;
+                height: 446px;
+                border-radius: 12px;
+                transition: 2.5s;
+                cursor: pointer;
+            }
+
+            .main__item_img:hover {
+                background-size: 120% 120%;
+            }
+
+            .main__item_info {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .main__info-left {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                    .main__profile_img {
+                        width: 48px;
+                        height: 48px;
+                        cursor: pointer;
+                    }
+
+                    .profile__info {
+
+                        p:nth-child(1) {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 32px;
+                            color: var(--main-btn-white-hover);
+                        }
+
+                        p:nth-child(2) {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: var(--main-btn-white-hover);
+                        }
+                    }
+                }
+
+                .main__item_price {
+                    padding: 8px 8px 6px 8px;
+                    border: 2px solid #45B36B;
+                    border-radius: 4px;
+                    cursor: pointer;
+
+                    p {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 12px;
+                        text-transform: uppercase;
+                        color: #45B36B;
+
+                    }
+                }
+            }
+        }
+        .second__items{
+            display: flex;
+            max-height: 508px;
+            flex-direction: column;
+            gap: 32px;
+            padding: 0 48px 0 0;
+            border-right: 1px solid var(--main-e-color);
+        }
+        
+    }
+    .feed-upload{
+        display: flex;
+        flex-direction: column;
+        .feed-upload__header{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            color: var(--main-color-text-n-border);
+        }
+    }
+}

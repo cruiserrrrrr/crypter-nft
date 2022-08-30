@@ -1,0 +1,100 @@
+:root {
+    --main-background: #141416;
+    --main-e-color: #353945;
+    /* ----------------------------- */
+    --main-color-text-n-border: #777E91;
+    --main-color-text: #F4F5F6;
+    --main-color-price: #45B36B;
+    --main-btn-color: #FCFCFD;
+    --main-btn-color-dark: #23262F;
+    /* ----------------------------- */
+    --main-btn-blue: #3772FF;
+    --main-btn-blue-hover: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #3772FF;
+    --main-btn-dark: #E6E8EC;
+    --main-btn-dark-hover: #23262F;
+    --main-btn-white: #777E91;
+    --main-btn-white-hover: #FCFCFD;
+    /* ----------------------------- */
+}
+
+
+.cta-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #FCFCFC;
+    border-top: 1px solid var(--main-e-color);
+
+    .cta-container {
+        padding: 80px 0;
+        width: 1120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .cta-info {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 42.86%;
+
+            .cta-actions {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .actions-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    p:nth-child(1) {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 16px;
+                        color: var(--main-color-text-n-border);
+                    }
+
+                    p:nth-child(2) {
+                        font-family: 'DM Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 64px;
+                        line-height: 64px;
+                        letter-spacing: -0.02em;
+                        color: var(--main-btn-color);
+                    }
+
+                }
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: var(--main-color-text-n-border);
+                }
+
+            }
+
+            .cta-info__buttons {
+                display: flex;
+                gap: 16px;
+                width: 100%;
+            }
+
+        }
+
+        .cta-image {
+            width: 57.14%;
+
+            img {
+                width: 105%;
+                height: 105%;
+            }
+        }
+    }
+}

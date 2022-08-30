@@ -1,0 +1,165 @@
+:root {
+    --main-background: #141416;
+    --main-e-color: #353945;
+    /* ----------------------------- */
+    --main-color-text-n-border: #777E91;
+    --main-color-text: #F4F5F6;
+    --main-color-price: #45B36B;
+    --main-btn-color: #FCFCFD;
+    --main-btn-color-dark: #23262F;
+    /* ----------------------------- */
+    --main-btn-blue: #3772FF;
+    --main-btn-blue-hover: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #3772FF;
+    --main-btn-dark: #E6E8EC;
+    --main-btn-dark-hover: #23262F;
+    --main-btn-white: #777E91;
+    --main-btn-white-hover: #FCFCFD;
+    /* ----------------------------- */
+}
+
+.faq-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .faq-container {
+        padding-top: 80px;
+        max-width: 1120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+
+        .faq-header {
+            display: flex;
+            max-width: 640px;
+            flex-direction: column;
+            gap: 12px;
+
+            .faq-header__subtittle {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 12px;
+                color: var(--main-color-text-n-border);
+                text-transform: uppercase;
+            }
+
+            .faq-header__tittle {
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 56px;
+                color: var(--main-btn-color);
+                letter-spacing: -0.02em;
+            }
+
+            .faq-header__info {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--main-btn-dark);
+
+                a {
+                    color: var(--main-btn-blue);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .faq-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .faq-content__nav {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                button {
+                    border: none;
+                    background: transparent;
+                    cursor: pointer;
+
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: var(--main-btn-white);
+                    transition: .25s;
+                }
+                button:hover{
+                    color: var(--main-btn-color);
+                }
+            }
+
+            .content-item__wrapper {
+                width: 100%;
+                max-width: 735px;
+                display: flex;
+                flex-direction: column;
+
+                .ganeral-items__wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 33px 0 40px;
+                    border-top: 1px solid var(--main-e-color);
+                    cursor: pointer;
+
+                    .item-haeder {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: 8px;
+
+                        p {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: var(--main-btn-color);
+                        }
+                    }
+
+                    .item-content {
+                        display: flex;
+                        overflow: hidden;
+                        flex-direction: column;
+                        gap: 24px;
+                        height: 0;
+                        padding-top: 40px;
+                        transition: .3;
+                        overflow: hidden;
+
+                        p {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: var(--main-color-text-n-border);
+                            transition: .3s;
+                            opacity: 0;
+                        }
+                    }
+
+                    .item-content.active {
+                        transition: .3s;
+                        overflow: visible;
+                        height: 210px;
+                        p{
+                            opacity: 1;
+                        }
+                        
+                    }
+
+                }
+            }
+        }
+    }
+}

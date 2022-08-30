@@ -1,0 +1,34 @@
+{
+    "profile": {
+        "name": "Enrico Cole",
+        "wallet": "0xc4c16a645...b21a",
+        "moneyWallet": 7.00698,
+        "registerData": "Mar 15, 2021"
+    },
+    "notificationItems": {
+        {
+            "img": "https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/bluegirl.png?raw=true",
+            "type": "0.08 ETH recived",
+            "name": "ETH received",
+            "time": 2
+        },
+        {
+            "img": "https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/post.png?raw=true",
+            "type": "New bid 0.2 ETH",
+            "name": "C O I N Z",
+            "time": 3
+        },
+        {
+            "img": "https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/mans.png?raw=true",
+            "type": "0.08 ETH recived",
+            "name": "ETH received",
+            "time": 4
+        },
+        {
+            "img": "https://github.com/cruiserrrrrr/img/blob/cruiserrrrrr/hexagon.png?raw=true",
+            "type": "0.08 ETH recived",
+            "name": "ETH received",
+            "time": 5
+        }
+    }
+}

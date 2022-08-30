@@ -1,0 +1,43 @@
+.time{
+    margin-top: 8px;
+    word-spacing: 22px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    color: #FCFCFD;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+.timer_wrapper{
+    display: flex;
+
+    .time_item{
+        margin: 0 19.5px;
+    }
+}
+
+.time_number{
+    word-spacing: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #777E91;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+}

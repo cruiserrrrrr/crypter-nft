@@ -1,0 +1,43 @@
+:root {
+    --main-background: #141416;
+    --main-e-color: #353945;
+    /* ----------------------------- */
+    --main-color-text-n-border: #777E91;
+    --main-color-text: #F4F5F6;
+    --main-color-price: #45B36B;
+    --main-btn-color: #FCFCFD;
+    --main-btn-color-dark: #23262F;
+    /* ----------------------------- */
+    --main-btn-blue: #3772FF;
+    --main-btn-blue-hover: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #3772FF;
+    --main-btn-dark: #E6E8EC;
+    --main-btn-dark-hover: #23262F;
+    --main-btn-white: #777E91;
+    --main-btn-white-hover: #FCFCFD;
+    /* ----------------------------- */
+  }
+
+
+
+.hotbid-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    gap: 64px;
+    padding: 136px 0 128px 0;
+
+    .hotbid__header {
+        width: 100%;
+        justify-content: space-between;
+        text-align: left;
+
+        h2 {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            color: var(--main-btn-color);
+        }
+    }
+}

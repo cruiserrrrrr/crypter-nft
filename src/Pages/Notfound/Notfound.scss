@@ -1,0 +1,55 @@
+*,
+::after,
+::before {
+  padding: 0 0;
+  margin: 0 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-background: #141416;
+  --main-e-color: #353945;
+  /* ----------------------------- */
+  --main-color-text-n-border: #777E91;
+  --main-color-text: #F4F5F6;
+  --main-color-price: #45B36B;
+  --main-btn-color: #FCFCFD;
+  --main-btn-color-dark: #23262F;
+  /* ----------------------------- */
+  --main-btn-blue: #3772FF;
+  --main-btn-blue-hover: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #3772FF;
+  --main-btn-dark: #E6E8EC;
+  --main-btn-dark-hover: #23262F;
+  --main-btn-white: #777E91;
+  --main-btn-white-hover: #FCFCFD;
+  /* ----------------------------- */
+}
+
+.notfound-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .notfound-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 180px 0;
+    gap: 60px;
+    width: 100%;
+
+    p {
+      text-align: center;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 130px;
+      line-height: 32px;
+      letter-spacing: -0.02em;
+      color: #F4F5F6;
+    }
+  }
+}

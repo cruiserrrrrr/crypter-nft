@@ -1,0 +1,56 @@
+:root {
+    --main-background: #141416;
+    --main-e-color: #353945;
+    /* ----------------------------- */
+    --main-color-text-n-border: #777E91;
+    --main-color-text: #F4F5F6;
+    --main-color-price: #45B36B;
+    --main-btn-color: #FCFCFD;
+    --main-btn-color-dark: #23262F;
+    /* ----------------------------- */
+    --main-btn-blue: #3772FF;
+    --main-btn-blue-hover: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #3772FF;
+    --main-btn-dark: #E6E8EC;
+    --main-btn-dark-hover: #23262F;
+    --main-btn-white: #777E91;
+    --main-btn-white-hover: #FCFCFD;
+    /* ----------------------------- */
+}
+
+
+.homeheader-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding-top: 128px;
+
+    .homeheader-info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+
+        .homeheader__subtittle {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 12px;
+            color: var(--main-color-text-n-border);
+            text-transform: uppercase;
+        }
+
+        .homeheader__tittle {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            color: var(--main-btn-white-hover);
+            text-align: center;
+            letter-spacing: -0.01em;
+        }
+    }
+}

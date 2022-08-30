@@ -1,0 +1,98 @@
+:root {
+    --main-background: #141416;
+    --main-e-color: #353945;
+    /* ----------------------------- */
+    --main-color-text-n-border: #777E91;
+    --main-color-text: #F4F5F6;
+    --main-color-price: #45B36B;
+    --main-btn-color: #FCFCFD;
+    --main-btn-color-dark: #23262F;
+    /* ----------------------------- */
+    --main-btn-blue: #3772FF;
+    --main-btn-blue-hover: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #3772FF;
+    --main-btn-dark: #E6E8EC;
+    --main-btn-dark-hover: #23262F;
+    --main-btn-white: #777E91;
+    --main-btn-white-hover: #FCFCFD;
+    /* ----------------------------- */
+}
+
+.haeder-container {
+    width: 100%;
+    max-height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 100px;
+    position: relative;
+    border-bottom: 1px solid var(--main-e-color);
+
+    .header-wrapper {
+        width: 1120px;
+        display: flex;
+        justify-content: space-between;
+
+
+        .haeder_left-content {
+            display: flex;
+            align-items: center;
+
+            .header-logo {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 0 32px 0 0;
+                border-right: 1px solid var(--main-e-color);
+
+                .logo-icon {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                a {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: -0.02em;
+                    color: var(--main-color-text);
+                    text-decoration: none;
+                }
+            }
+
+            .header-nav {
+                padding: 0 0 0 32px;
+                display: flex;
+                gap: 32px;
+
+                a {
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: var(--main-btn-white);
+                    transition: .2s;
+                }
+
+                a:hover {
+                    color: var(--main-color-text);
+                }
+            }
+        }
+
+        .header_actions {
+            align-items: center;
+            display: flex;
+            gap: 24px;
+            
+            nav{
+                display: flex;
+                gap: 12px;
+            }
+        }
+    }
+}

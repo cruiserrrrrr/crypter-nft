@@ -1,0 +1,353 @@
+*,
+::after,
+::before {
+    padding: 0 0;
+    margin: 0 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-background: #141416;
+    --main-e-color: #353945;
+    /* ----------------------------- */
+    --main-color-text-n-border: #777E91;
+    --main-color-text: #F4F5F6;
+    --main-color-price: #45B36B;
+    --main-btn-color: #FCFCFD;
+    --main-btn-color-dark: #23262F;
+    /* ----------------------------- */
+    --main-btn-blue: #3772FF;
+    --main-btn-blue-hover: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #3772FF;
+    --main-btn-dark: #E6E8EC;
+    --main-btn-dark-hover: #23262F;
+    --main-btn-white: #777E91;
+    --main-btn-white-hover: #FCFCFD;
+    /* ----------------------------- */
+}
+
+.upload-singl__wrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    .upload-singl__container {
+        padding: 128px 0;
+        width: 1120px;
+        gap: 128px;
+        display: flex;
+        justify-content: space-between;
+
+        .singl-content__options {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .options-header {
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    flex: 1;
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 56px;
+                    letter-spacing: -0.02em;
+                    color: var(--main-btn-color);
+                }
+            }
+
+            .options-content {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .content-details {
+                    display: flex;
+                    gap: 32px;
+                    flex-direction: column;
+                    padding-bottom: 40px;
+                    border-bottom: 1px solid var(--main-e-color);
+
+                    p {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: var(--main-btn-color);
+                    }
+
+                    .details-item {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                    }
+
+                    .details-properties {
+                        display: flex;
+                        gap: 20px;
+                        width: 100%;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+
+                .items-settings {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
+                    padding-top: 40px;
+
+                    .settings-item {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .settings-item__info {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 4px;
+
+                            p:nth-child(1) {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: var(--main-btn-color);
+                            }
+
+                            p:nth-child(2) {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 20px;
+                                color: var(--main-btn-white);
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .singl-content__choice-item {
+            display: flex;
+            gap: 24px;
+            max-height: 650px;
+            flex-direction: column;
+            padding: 48px 48px;
+            border-radius: 16px;
+            border: 1px solid var(--main-e-color);
+
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                color: var(--main-btn-color);
+            }
+
+            .nft-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 21px;
+                width: 256px;
+                height: 450px;
+                overflow: hidden;
+
+                .nft-item__product {
+                    position: relative;
+                    width: 100%;
+                    height: 303px;
+                    background-position: 100% 100%;
+
+                    .product-nav {
+                        z-index: 10;
+                        padding: 11px 8px 16px;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        transition: .25s;
+                        background: var(--main-btn-color);
+                        border-radius: 16px;
+                        order: 0;
+
+                        .product-nav__haeder {
+                            display: flex;
+                            width: 100%;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            p {
+                                padding: 8px 8px 6px 8px;
+                                max-height: 26px;
+                                background: #45B36B;
+                                border-radius: 4px;
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 12px;
+                                line-height: 12px;
+                                text-transform: uppercase;
+                                color: var(--main-btn-color);
+                            }
+                        }
+
+                    }
+
+                    .product-img {
+                        width: 100%;
+                        z-index: 1;
+                        order: 1;
+                        border-radius: 16px;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        height: 100%;
+                        pointer-events: none;
+                        transition: .25s;
+                        cursor: pointer;
+                    }
+                }
+
+                .nft-item__product:hover {
+
+                    // .product-nav {
+                    //     opacity: 1;
+                    // }
+
+                    .product-img {
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+                }
+
+                .item-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    .item-content__price {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .item-content__price-name {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: var(--main-btn-color);
+                        }
+
+                        .item-content__price-price {
+                            padding: 8px 8px 6px 8px;
+                            border: 2px solid #45B36B;
+                            border-radius: 4px;
+
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 12px;
+                            text-transform: uppercase;
+                            color: #45B36B;
+                        }
+                    }
+
+                    .item-content__collection {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-bottom: 1px solid var(--main-e-color);
+                        padding-bottom: 12px;
+
+                        .item-content__collection-profile {
+                            display: flex;
+                            margin-left: 8px;
+
+                            .profile-item {
+                                margin-left: -8px;
+                                height: 24px;
+                                width: 24px;
+                                border: 2px solid var(--main-btn-dark-hover);
+                                border-radius: 48px;
+                            }
+
+                            .profile-item::nth-child(1) {
+                                margin-left: 0px;
+                            }
+                        }
+
+                        .item-content__collection-stock {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: var(--main-btn-dark);
+                        }
+                    }
+
+                    .item-content__bid {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .item-content__bid-content {
+                            display: flex;
+                            gap: 4px;
+
+                            .content-img {
+                                width: 20px;
+                                height: 20px;
+                            }
+
+                            .content-highest {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 20px;
+                                color: var(--main-color-text-n-border);
+                            }
+
+                            .content-bid {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 12px;
+                                line-height: 20px;
+                                color: var(--main-btn-color);
+                            }
+                        }
+
+                        .item-content__bid-new {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: var(--main-color-text-n-border);
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}

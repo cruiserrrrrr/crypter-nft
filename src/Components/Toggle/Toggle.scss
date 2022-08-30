@@ -1,0 +1,64 @@
+:root {
+    --main-background: #141416;
+    --main-e-color: #353945;
+    /* ----------------------------- */
+    --main-color-text-n-border: #777E91;
+    --main-color-text: #F4F5F6;
+    --main-color-price: #45B36B;
+    --main-btn-color: #FCFCFD;
+    --main-btn-color-dark: #23262F;
+    /* ----------------------------- */
+    --main-btn-blue: #3772FF;
+    --main-btn-blue-hover: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), #3772FF;
+    --main-btn-dark: #E6E8EC;
+    --main-btn-dark-hover: #23262F;
+    --main-btn-white: #777E91;
+    --main-btn-white-hover: #FCFCFD;
+    /* ----------------------------- */
+  }
+.toggle-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    border-radius: 32px;
+
+    .toggle-checkbox{
+        opacity: 0;
+        width: 0;
+        height: 0;
+        transition: .25s;
+    }
+    .toggle-slider{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: var(--main-e-color);
+        border-radius: 32px;
+        transition: .25s;
+    }
+    .toggle-slider::before{
+        position: absolute;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border-radius: 32px;
+        background: var(--main-btn-blue);
+        transition: .25s;
+
+        left: 4px;
+        bottom: 4px;
+    }
+    .toggle-checkbox:checked + .toggle-slider{
+        background: var(--main-btn-blue);
+    }
+    .toggle-checkbox:checked + .toggle-slider::before{
+        transform: translateX(24px);
+        background: #FFFFFF;
+
+        
+    }
+}
